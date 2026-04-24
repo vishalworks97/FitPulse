@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="8dp">
+
+    <ImageView
+        android:id="@+id/ivActivityIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="6dp"
+        android:background="@drawable/bg_pill_dark"
+        android:src="@drawable/ic_fitness"
+        app:tint="#00FF41" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvActivityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Name"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tvActivityDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail info"
+            android:textColor="#8E8E8E"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvActivityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+250 kcal"
+        android:textColor="#00FF41"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">FitPulse</string>
+    <string name="logo_text">FP</string>
+    <string name="tagline">Your AI Fitness Companion</string>
+    <string name="feature_steps">🏃 Track Steps</string>
+    <string name="feature_diet">🥗 Diet AI</string>
+    <string name="feature_analytics">📊 Analytics</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_in_desc">Sign in to sync your fitness data and unlock AI-powered recommendations.</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="secure_private">Secure &amp; Private</string>
+    <string name="no_password">No password</string>
+    <string name="data_encrypted">Data encrypted</string>
+    <string name="signing_you_in">Signing you in…</string>
+    <string name="default_web_client_id">568864919402-0m51rggu441gbi7krqg5nubr8svndpbk.apps.googleusercontent.com</string>
+
+    <!-- Profile Setup -->
+    <string name="profile_setup_title">Complete Your Profile</string>
+    <string name="profile_setup_subtitle">Help us personalize your fitness journey</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_gender">Gender</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="hint_height">Height (cm)</string>
+    <string name="hint_weight">Weight (kg)</string>
+    <string name="btn_finish_setup">Finish Setup</string>
+
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="workout_activity">Workout Activity</string>
+    <string name="no_workouts_logged">No workouts logged</string>
+    <string name="diet_activity">Diet Activity</string>
+    <string name="no_meals_logged">No meals logged</string>
+
+</resources>

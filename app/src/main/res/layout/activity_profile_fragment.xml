@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fillViewport="true">
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/layoutViewMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_manage"
+                app:tint="#00FF41" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_person"
+                app:shapeAppearanceOverlay="@style/CircleImage"
+                app:strokeColor="#00FF41"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/tvDisplayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="Athlete"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDisplayStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Status: Active"
+                android:textColor="#00FF41" />
+
+            <TextView
+                android:id="@+id/tvDisplayDiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Diet: Vegetarian"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="4dp"
+                    android:background="#111111"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/tvDisplayWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 kg"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:textColor="#8E8E8E"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="4dp"
+                    android:background="#111111"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/tvDisplayBMI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#00FF41"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BMI"
+                        android:textColor="#8E8E8E"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="4dp"
+                    android:background="#111111"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/tvDisplayGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="#8E8E8E"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="4dp"
+                    android:background="#111111"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/tvDisplayAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:textColor="#8E8E8E"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </GridLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewHistory"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="24dp"
+                android:text="VIEW ACTIVITY HISTORY"
+                android:textColor="#00FF41"
+                app:cornerRadius="12dp"
+                app:strokeColor="#00FF41" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAboutApp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ABOUT FITPULSE"
+                android:textColor="#00FF41" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:text="DEVELOPED BY\nVISHAL KUMAR &amp; MOHSIN ABBAS"
+                android:textColor="#333333"
+                android:textSize="10sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignOut"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:letterSpacing="0.1"
+                android:text="SIGN OUT"
+                android:textColor="#FF5555"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="12dp"
+                app:rippleColor="#33FF5555"
+                app:strokeColor="#FF5555"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutEditMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Metrics"
+                android:textColor="#00FF41"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <EditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="Full Name" android:textColor="#FFFFFF" android:textColorHint="#555555" android:backgroundTint="#00FF41" />
+            <EditText android:id="@+id/etStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Current Status" android:textColor="#FFFFFF" android:textColorHint="#555555" android:backgroundTint="#00FF41" />
+            <EditText android:id="@+id/etAge" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Age" android:inputType="number" android:textColor="#FFFFFF" android:textColorHint="#555555" android:backgroundTint="#00FF41" />
+            <EditText android:id="@+id/etWeight" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Weight (kg)" android:inputType="numberDecimal" android:textColor="#FFFFFF" android:textColorHint="#555555" android:backgroundTint="#00FF41" />
+            <EditText android:id="@+id/etHeight" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Height (cm)" android:inputType="number" android:textColor="#FFFFFF" android:textColorHint="#555555" android:backgroundTint="#00FF41" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Select Gender" android:textColor="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:entries="@array/gender_options"
+                android:backgroundTint="#00FF41"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:popupBackground="#222222" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Dietary Preference" android:textColor="#FFFFFF" />
+            <RadioGroup
+                android:id="@+id/rg_diet_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <RadioButton
+                    android:id="@+id/rb_veg_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetarian"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="#00FF41" />
+                <RadioButton
+                    android:id="@+id/rb_nonveg_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Non-Vegetarian"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="#00FF41" />
+            </RadioGroup>
+
+            <!-- Notification Settings -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Notifications"
+                android:textColor="#00FF41"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enable Diet Reminders"
+                    android:textColor="#FFFFFF" />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Breakfast"
+                        android:textColor="#8E8E8E"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/tvBreakfastTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:00"
+                        android:textColor="#00FF41"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lunch"
+                        android:textColor="#8E8E8E"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/tvLunchTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14:00"
+                        android:textColor="#00FF41"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinner"
+                        android:textColor="#8E8E8E"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/tvDinnerTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21:00"
+                        android:textColor="#00FF41"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="30dp" android:backgroundTint="#00FF41" android:text="SAVE CHANGES" android:textColor="#000000" android:textStyle="bold" app:cornerRadius="12dp" />
+
+            <Button android:id="@+id/btnCancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@android:color/transparent" android:text="CANCEL" android:textColor="#FF5555" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

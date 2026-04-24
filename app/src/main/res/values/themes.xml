@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FitPulse — res/values/themes.xml
+    INSTRUCTION: Open res/values/themes.xml in Android Studio.
+    Replace the ENTIRE file content with this.
+    Also replace res/values-night/themes.xml with the same content
+    (so dark mode doesn't override your design).
+-->
+<resources>
+
+    <style name="Theme.FitPulse" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Status bar (top bar with battery/time) -->
+        <item name="android:statusBarColor">@color/bg_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Navigation bar (bottom system bar) -->
+        <item name="android:navigationBarColor">@color/bg_primary</item>
+
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/bg_primary</item>
+
+        <!-- Material color roles -->
+        <item name="colorPrimary">@color/green_accent</item>
+        <item name="colorPrimaryDark">@color/green_accent_dark</item>
+        <item name="colorOnPrimary">@color/bg_primary</item>
+        <item name="colorSecondary">@color/teal_accent</item>
+        <item name="colorSurface">@color/card_surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="android:colorBackground">@color/bg_primary</item>
+
+
+
+        <!-- Remove title bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="CircleImage">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+</resources>
