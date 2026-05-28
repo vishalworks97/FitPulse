@@ -306,7 +306,7 @@ copies or substantial portions of the Software.
 
 <div align="center">
 
-Built with 💚 by **Vishal Kumar** & **Mohsin Abbas**
+Built with 💚 by **Vishal Kumar**
 <br/>
 School of Electrical Engineering & Computer Science — SEECS · 2025
 
