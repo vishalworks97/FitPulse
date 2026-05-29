@@ -46,17 +46,18 @@ It's an Android app built in Java, powered by Groq's Llama 3 model for real-time
 <div align="center">
 
 | Home Dashboard | Diet Plan | AI Meal Ideas |
-|:-:|:-:|:-:|
-| <img src="readme_assets/screen_home.jpg" width="200"/> | <img src="readme_assets/screen_diet.jpg" width="200"/> | <img src="readme_assets/screen_diet_ai.jpg" width="200"/> |
-| Daily overview — AI tips, calorie charts & steps | Breakfast logged, AI Recommend on each slot | Pakistan Cuisine suggestions from Groq Llama 3 |
+|---|---|---|
+| <img src="readme_assets/screen_home.jpg" width="220"/> | <img src="readme_assets/screen_diet.jpg" width="220"/> | <img src="readme_assets/screen_diet_ai.jpg" width="220"/> |
+| Daily overview with AI tips | Breakfast logging & recommendations | Pakistani cuisine suggestions |
+
+<br>
 
 | Workout Tracker | Profile |
-|:-:|:-:|
-| <img src="readme_assets/screen_workout.jpg" width="200"/> | <img src="readme_assets/screen_profile.jpg" width="200"/> |
-| Live timer, exercise GIF, MET-based calorie math | BMI, stats grid, diet prefs & activity history |
+|---|---|
+| <img src="readme_assets/screen_workout.jpg" width="220"/> | <img src="readme_assets/screen_profile.jpg" width="220"/> |
+| Exercise timer & calorie math | BMI, stats & activity history |
 
 </div>
-
 ---
 
 ## Features
